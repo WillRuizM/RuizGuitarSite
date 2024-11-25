@@ -9,7 +9,7 @@ COPY src ./src
 
 RUN chmod 777 mvnw
 
-RUN ./mvnw
+
 
 run ls -l ./target
 
