@@ -11,7 +11,7 @@ RUN chmod 777 mvnw
 
 
 
-run ls -l ./target
+run ls -l
 
 
 CMD [ "java","-jar","target/crud-0.0.1-SNAPSHOT.war" ]
