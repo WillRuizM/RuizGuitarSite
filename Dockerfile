@@ -1,4 +1,4 @@
-FROM openjdk:23-jdk-oracle
+FROM openjdk:23-jdk-bookworm
 
 WORKDIR /app
 
