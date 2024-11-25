@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="William Ruiz" content="Aula de musica" />
+        <title>Ruiz Guitar Home</title>
+        <!-- icone da aba navegador-->
+        <link rel="icon" type="image/x-icon" th:href="@{/imagens/app-music-maker.png}" />
+    
+        <link th:href="@{/css/styles.css}" rel="stylesheet" />
+
+    </head>
+    <body>
+        <!-- Menu (tentar deixar responsivo???)-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <div><img th:src="@{/imagens/logo/bco-transp.png}" alt="" width="60" ></div>
+            <div class="container px-5">
+                <a class="navbar-brand" th:href="@{/}" >Ruiz Guitar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" th:href="@{/}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/aulas}">Aulas</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/exer}">Exercicios</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/teclado}">Teclado Virtual</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/afinador}">Afinador</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/contato}">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/sobre_nos}">Sobre Mim</a></li>
+                        <li class="nav-item"><a class="nav-link"th:href="@{/cadastro}">Cadastrar Alunos</a></li>
+                        <li class="nav-item"><a class="nav-link"th:href="@{/listagem}">Listar Alunos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container px-4 px-lg-5">
+            
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" th:src="@{/imagens/guitarra-eletrica_23-2151376260.jpg}" alt="..." /></div>
+                <div class="col-lg-5 text-center">
+                    <h1 class="font-weight-light">Aprenda musica</h1>
+                    <p>Leve a música com você onde quer que esteja! Com nossa ajuda, você pode acessar nossas aulas de música incríveis diretamente do seu computador, smartphone ou tablet. Aprenda no seu próprio ritmo, em qualquer lugar, so depende de voce!.</p>
+                    <a class="btn btn-primary" th:href="@{/aulas}">Saiba Mais</a>
+                </div>
+            </div>
+            
+            <div class="card text-white bg-secondary my-5 py-4 text-center">
+                <div class="card-body"><p class="text-white m-0">Realize o seu sonho de Aprender musica!
+                    Aqui você aprende música de verdade.</p></div>
+            </div>
+            
+            <div class="row gx-4 gx-lg-5 ">
+                <div class="col-md-4 mb-5 ">
+                    <div class="card h-100 bg-secondary">
+                        <div class="card-body">
+                            <h2 class="card-title">Introdução a Musica</h2>
+                            <p class="card-text">A música é a arte de organizar sons no tempo, e envolve elementos como melodia, harmonia, ritmo e timbre. Não importa se seu interesse é tocar um instrumento, cantar, compor ou simplesmente apreciar mais profundamente a música que você ouve, os primeiros passos são fundamentais para construir uma base sólida.</p>
+                            
+                        </div>
+                        <div class="card-footer text-center"><a class="btn btn-primary btn-sm" th:href="@{/aulas#intro}">Me leve ate la!</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100 bg-secondary">
+                        <div class="card-body">
+                            <h2 class="card-title">Exercicios</h2>
+                            <p class="card-text" >Pratique regularmente, mas de forma prazerosa. A prática constante é essencial para o progresso, mas lembre-se de que a música deve ser uma fonte de alegria. Defina metas pequenas e alcançáveis para não se sentir sobrecarregado.</p>
+                        </div>
+                        <div class="card-footer text-center"><a class="btn btn-primary btn-sm" th:href="@{/exer}">Me leve ate la!</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100 bg-secondary">
+                        <div class="card-body">
+                            <h2 class="card-title">Dicas Incriveis</h2>
+                            <p class="card-text">Estudar música é uma jornada enriquecedora que pode trazer muitos benefícios, tanto emocionais quanto intelectuais. Para iniciantes, a música pode parecer um vasto e complexo universo, mas com os passos certos, você pode começar a explorar este mundo de forma divertida e gratificante.</p>
+                        </div>
+                        <div class="card-footer text-center"><a class="btn btn-primary btn-sm" th:href="@{aulas}">Me leve ate la!</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; William Ruiz 2024</p></div>
+        </footer>
+        <!-- boot JS-->
+        <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+        <!--  JS normal-->
+        <script th:src="@{/js/scripts.js}"></script>
+
+        
+    </body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="William Ruiz" content="Aula de musica" />
+        <title>Ruiz Guitar Home</title>
+        <!-- icone da aba navegador-->
+        <link rel="icon" type="image/x-icon" th:href="@{/imagens/app-music-maker.png}" />
+    
+        <link th:href="@{/css/styles.css}" rel="stylesheet" />
+
+    </head>
+    <body>
+        <!-- Menu (tentar deixar responsivo???)-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <div><img th:src="@{/imagens/logo/bco-transp.png}" alt="" width="60" ></div>
+            <div class="container px-5">
+                <a class="navbar-brand" th:href="@{/}" >Ruiz Guitar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" th:href="@{/}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" th:href="@{/aulas}">Aulas</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/exer}">Exercicios</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/teclado}">Teclado Virtual</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/afinador}">Afinador</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/contato}">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/sobre_nos}">Sobre Mim</a></li>
+                        <li class="nav-item"><a class="nav-link"th:href="@{/cadastro}">Cadastrar Alunos</a></li>
+                        <li class="nav-item"><a class="nav-link"th:href="@{/listagem}">Listar Alunos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navfix navbar  navbar-expand-lg navbar-dark bg-dark " >
+            
+            <div class="container px-5 ">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon "></span></button>
+                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" th:href="@{aulas#intro}">INTRODUÇÃO</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{aulas#clave}">CLAVES</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{aulas#val}">VALORES</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{aulas#tom}">TONS E SEMITONS NATURAIS</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{aulas#acidentes}">ACIDENTES</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{aulas#escalas}">ESCALA DE DÓ MAIOR </a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/aulas}">VOLTAR PARA TOPO </a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<div class="container px-4 px-lg-5"><br><br><br><br><br><br>
+                <a th:href="@{#intro}" id="intro"><h1>Introdução</h1></a><br>
+                <p>
+                    <em><strong>MÚSICA:</strong></em> É a arte de combinar os sons simultânea e sucessivamente, com ordem,equilíbrio e proporção, dentro do tempo.
+• É a arte de manifestar os diversos afetos de nossa alma mediante o som.<br><br>
+As principais partes que constituem a <em><strong>MÚSICA</strong> são:<br>
+1) <em><strong>MELODIA –</strong></em> É a combinação dos <em><strong>SONS SUCESSIVOS</strong></em> (dados uns após outros). É
+a concepção horizontal da Música.<br>
+2) <em><strong>HARMONIA –</strong> É a combinação dos <em><strong>SONS SIMULTÂNEOS</strong></em> (dados de uma só
+vez). É a concepção vertical da Música.<br>
+3) <em><strong>RÍTMO –</strong></em> É a combinação dos valores tempo.<br><br>
+Escreve-se a música sobre 5 linhas e 4 espaços horizontais paralelas e eqüidistantes.
+A estas linhas e espaços dá-se o nome de PAUTA ou PENTAGRAMA.  <br>    Exemplo: <br>
+<div class="col-lg-7">
+    <img class="img-fluid rounded mb-4 mb-lg-0" th:src="@{/imagens/imagens_aula/linhas.png}" alt="..."  ></div><br>
+</p>
+<a th:href="@{#clave}" id="clave"><h3>Claves</h3>  </a> <br> 
+        <p> <em><strong>CLAVE</strong></em> é o sinal colocado no inicio da pauta, sobre determinada linha, para dar nome às
+notas. As Claves são 3 (três): <br><br></p>
+<img class="img-fluid rounded mb-5 mb-lg-0" th:src="@{imagens/imagens_aula/claves.png}" alt="..." width="550"/><br>
+            <br><h5 >Clave de Sol: </h5> <br>
+<img class="img-fluid rounded mb-5 mb-lg-0" thsrc="@{imagens/imagens_aula/notas.png}" alt="..." width="650" /><br><br>
+        <p>
+            Além das cinco linhas e dos quatro espaços da pauta natural, existem ainda linhas e espaços
+situados acima ou abaixo da pauta natural para auxiliá-la em sua extensão. Formam,
+respectivamente, as pautas suplementares superior e inferior. <br><br>
+<img class="img-fluid rounded mb-5 mb-lg-0 " th:src="@{imagens/imagens_aula/linhas_suplementares.png}" alt="..." width="450"/><br>
+        </p>
+        <p>
+            <em><strong>OBS.:</strong></em> Os sons musicais são representados graficamente por sinais chamados notas. À
+escrita da música dá-se o nome de notação musical.
+AS NOTAS SÃO SETE: <em><strong>DÓ – RÉ – MI – FÁ – SOL – LÁ – SI.</strong></em>
+Essas sete notas ouvidas sucessivamente formam uma série de sons aos quais dá-se o nome
+de escala. <br><br>
+
+    <strong><em>NOME DAS NOTAS NA PAUTA</em></strong><br><br>
+    <img class="img-fluid rounded mb-5 mb-lg-0 " th:src="@{imagens/imagens_aula/notas_pauta.png}" alt="..." width="700"/><br>
+
+
+        </p>
+
+        <a th:href="@{#val}" id="val"><h3>Valores</h3></a>
+    <p>A música é representada pelo equilíbrio de sons e silêncios. Ambos têm durações
+            diferentes e são representados por sinais denominados valores.<br>
+            Os valores que representam a duração dos sons musicais são chamados de
+            FIGURAS. <br>Os que representam as ausências de sons são chamados de PAUSAS.
+            A unidade de medida da música é o TEMPO. Cada tempo corresponde a uma
+            PULSAÇÃO. <br>
+            Cada figura de SOM tem sua respectiva PAUSA que lhe corresponde ao mesmo tempo de
+duração.
+Vejamos, por exemplo, se uma semibreve tiver 4 tempos, a pausa de semibreve também
+terá 4 tempos. <br><br>
+<img class="img-fluid rounded mb-5 mb-lg-0 " th:src="@{imagens/imagens_aula/pausas.png}" alt="..." width="700"/><br><br>
+    </p>
+
+    <h3>COMPASSOS </h3>
+    <h4>GENERALIDADES - COMPASSOS SIMPLES</h4><br>
+
+    <p>
+        
+        GENERALIDADES – As figuras que representam os valores das notas têm duração
+        indeterminada, isto é, não têm valor fixo.<br> Quem os determinará será uma fração ordinária
+        escrita após a clave e os acidentes fixos que é chamada de FÓRMULA DE COMPASSO.<br>
+        Ex.: 4/4, 3/4 ,2/4 ,etc.<br><br>
+        Os compassos de dois tempos são chamados de.............BINÁRIOS<br>
+        Os compassos de três tempos são chamados de..............TERNÁRIOS<br>
+        Os compassos de quatro tempos são chamados de..........QUATERNÁRIOS<br><br>
+        Cada compasso é separado do seguinte por uma linha divisória vertical (TRAVESSÃO).<br>
+        Na terminação de um trecho musical usa-se colocar dois travessões denominados de
+        Travessão Duplo.<br> Se a terminação for absoluta, isto é, na finalização da música, chamar-seá de PAUSA FINAL. <br>
+        Em qualquer compasso, a figura que preenche um tempo chama-se UNIDADE DE
+TEMPO; a figura que preenche um compasso chama-se UNIDADE DE COMPASSO.<br>
+Os compassos dividem-se em: SIMPLES e COMPOSTOS e são representados por uma
+fração ordinária colocada no princípio da pauta, depois da clave. <br><br>
+COMPASSOS SIMPLES<br>
+<img class="img-fluid rounded mb-5 mb-lg-0 " th:src="@{imagens/imagens_aula/compassosSeC.png}" alt="..." width="600"/><br><br>
+
+Vejamos, por exemplo, um compasso simples BINÁRIO, TERNÁRIO OU
+QUATERNÁRIO no qual a unidade de tempo seja a semínima ou a colcheia.<br> A semínima
+vale duas colcheias e a colcheia vale duas semicolcheias. Logo, ambas são divisíveis por
+dois. Por conseguinte, os compassos que tiverem sua unidade de tempo divisível por
+2(dois) serão chamados de compassos simples.<br>
+Analisemos os termos das frações que representam os COMPASSOS SIMPLES.<br>
+O NUMERADOR determina o número de tempos do compasso.<br>
+Os algarismos que servem para numerador dos compassos simples são: 2 para o BINÁRIO,
+3 para o TERNÁRIO e 4 para QUATERNÁRIO<br>
+O DENOMINADOR Indica a figura que representa a unidade de tempo.
+Os números que servem como denominador são os seguintes:<br><br>
+1 - Representando a semibreve (considerada como a unidade)<br>
+2 - Representando a mínima (metade da semibreve)<br>
+4 - Representando a semínima (4ª parte da semibreve)<br>
+8 - Representando a colcheia (8ª parte da semibreve)<br>
+16 - Representando a semicolcheia (16ª parte da semibreve)<br>
+32 - Representando a fusa ( 32ª parte da semibreve)<br>
+64 - Representando a semifusa (64ª parte da semibreve).<br><br>
+Vejamos um compasso representado pela fórmula 2/4<br>
+Deduz-se o seguinte: Nesta fração 2/4 o numerador 2 indica o número de tempos. Trata-se
+de um compasso de dois tempos, isto é, BINÁRIO. O denominador 4 determina para
+unidade de tempo a figura que representa a 4ª parte da semibreve, ou seja, a semínima. <br>
+
+    </p>
+
+<a th:href="@{#tom}" id="tom"><h3>TONS E SEMITONS NATURAIS</h3></a><br>
+<p>ESCALA DIATÔNICA DE DÓ – SUA FORMAÇÃO E SEUS GRAUS
+SEMITOM – É o menor intervalo existente entre dois sons que o ouvido humano ocidental
+pode perceber e classificar.<br>
+TOM – É o intervalo existente entre dois sons, formado por dois semitons.
+ESCALA DIATÔNICA – é a sucessão de 8 sons por graus conjuntos guardando, entre si,
+intervalos de tom ou de semitom.<br>
+Ex.:
+
+
+Os tons e semitons contidos na escala diatônica são chamados de NATURAIS.
+A cada uma das notas da escala, de acordo com a sua função na própria escala, dá-se o
+nome de GRAU.<br>
+A escala diatônica possui 8 graus, sendo o VIII a repetição do primeiro.
+OS GRAUS DA ESCALA SÃO ASSIM DENOMINADOS:<br><br>
+I grau....................TÔNICA<br>
+II grau...................SUPERTÔNICA<br>
+III grau..................MEDIANTE<br>
+IV grau.................SUBDOMINANTE<br>
+V grau..................DOMINANTE<br>
+VI grau.................SUPER DOMINANTE<br>
+VII grau................SENSÍVEL<br>
+VIII grau...............TÔNICA<br><br>
+O primeiro grau da escala é o mais importante. Todos os demais graus têm com ele
+afinidade absoluta.
+É o grau quem dá seu nome à escala e quem a termina de um modo completo, sem nada
+deixar a desejar.
+Temos, por exemplo, a nota DÓ em função de Tônica. Esta escala é, portanto, chamada de
+ESCALA de DÓ ou escala em tom de DÓ. 
+
+</p>
+
+<a th:href="@{#acidentes}" id="acidentes"><h3>ACIDENTES</h3></a><br>
+
+<p>Dá-se o nome de acidente ao sinal que se coloca antes de uma nota para modificar-lhe a
+entoação.<br>
+A entoação das notas, conforme o sinal de alteração, poderá ser elevada ou abaixada em um
+ou dois semitons. São os seguintes: <br><br>
+
+<img class="img-fluid rounded mb-5 mb-lg-0 " th:src="@{imagens/imagens_aula/sustenidos.png}" alt="..." width="600"/><br><br>
+
+OBS. Nas notas sustenizadas o dobrado-sustenido eleva um semitom e nas notas
+bemolizadas o dobrado-bemol abaixa um semitom.<br>
+Os acidentes podem ser FIXOS, OCORRENTES ou de PRECAUÇÃO.<br>
+FIXOS são aqueles que fazem parte da armação da clave. Seu efeito vale por todo o trecho
+musical
+OCORRENTES são aqueles que aparecem no decorrer de um trecho musical
+predominando, somente, no compasso em que são escritos.
+DE PRECAUÇÃO são aqueles que aparecem a fim de evitarem erros na leitura rápida.
+Normalmente são grafados entre parêntesis.
+
+</p>
+<a th:href="@{#escalas}" id="escalas">ESCALA DE DÓ MAIOR<h3></h3></a><br>
+<p>
+    
+A escala de DÓ Maior é modelo para as demais escalas de MODO MAIOR. <br>Convém
+lembrar que nesta escala os intervalos de semitom são encontrados do III grau para o IV e
+do VII para o VIII.<br>
+E assim, pelo mesmo sistema, encontraremos as demais escalas maiores.<br>
+Para se formar escalas com SUSTENIDOS, conta-se uma 5ª justa ascendente, a partir da
+escala de Dó Maior.<br><br>
+DO MAIOR - - - - - Escala modelo<br>
+SOL MAIOR - - - - (Com 1 # - Fá)<br>
+RÉ MAIOR - - - - - (Com 2 # - Fá - Dó)<br>
+LA MAIOR - - - - - (Com 3 # - Fá - Dó - Sol)<br>
+MI MAIOR - - - - - (Com 4 # - Fá - Dó - Sol - Ré)<br>
+SI MAIOR - - - - - (Com 5 # - Fá - Dó - Sol - Ré - Lá)<br>
+FA # MAIOR - - - (Com 6 # - Fá - Dó - Sol - Ré - Lá - Mi)<br>
+DO # MAIOR - - - (Com 7 # - Fá - Dó - Sol - Ré - Lá - Mi - Si).<br><br>
+Eis as armaduras de Clave das escalas Maiores com SUSTENIDOS: <br><br>
+
+<img class="img-fluid rounded mb-5 mb-lg-0 " th:src="@{imagens/imagens_aula/sus.png}" alt="..." width="600"/><br><br>
+
+Seguindo o mesmo sistema, encontraremos as demais escalas maiores formadas com
+Bemóis. Essas escalas são encontradas por 5ªs justas descendentes.<br>
+DÓ MAIOR - - - - - Escala Modelo<br>
+FÁ MAIOR - - - - - (Com 1b - SI)<br>
+SIb MAIOR - - - - - (Com 2 b - Si - Mi )<br>
+MIb MAIOR - - - - - (Com 3 b - Si - Mi - Lá)<br>
+LÁb MAIOR - - - - - (Com 4 b - Si - Mi - Lá - Ré)<br>
+RÉb MAIOR - - - - - (Com 5 b - Si - Mi - Lá - Ré - Sol)<br>
+SOLb MAIOR - - - - (Com 6 b - Si - Mi - Lá - Ré - Sol - Dó)<br>
+DÓ b MAIOR - - - - (Com 7 b – Si -Mi - Lá - Ré - Sol - Dó - Fá).<br><br>
+
+
+Eis as armaduras de Clave das escalas MAIORES com BEMOL:<br><br>
+<img class="img-fluid rounded mb-5 mb-lg-0 " th:src="@{imagens/imagens_aula/b.png}" alt="..." width="600"/><br><br>
+
+OBS. “Os sustenidos aparecem (a começar do FÁ) por intervalos de 5ªs Justas
+ascendentes”.<br>
+Os bemóis aparecem (a começar do SI) por intervalos de 5ª justas descendente. <br><br><br><br>
+</p>
+
+
+
+
+
+
+    </div>
+    
+    <footer class="py-5 bg-dark">
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; William Ruiz 2024</p></div>
+    </footer>
+    
+    <script th:src="@{https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js}"></script>
+    
+    <script th:src="@{js/scripts.js} "></script>
+    </body>
+</html>
