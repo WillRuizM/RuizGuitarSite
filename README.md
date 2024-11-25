@@ -1,3 +1,0 @@
-"# RuizGuitarSite" 
-"# RuizGuitarSite" 
-"# RuizGuitarSite" 

@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-alpine
+FROM openjdk:23-jdk
 
 WORKDIR /app
 
@@ -8,8 +8,10 @@ COPY .mvn .mvn
 COPY src ./src
 
 RUN chmod 777 mvnw
-RUN ./mvnw package
 
-RUN ls -l
+RUN ./mvnw
 
-CMD [ "java","-jar","target/crud.war"]
+run ls -l ./target
+
+
+CMD [ "java","-jar","target/crud-0.0.1-SNAPSHOT.war" ]
