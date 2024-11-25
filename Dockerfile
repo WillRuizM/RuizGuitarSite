@@ -8,5 +8,8 @@ COPY .mvn .mvn
 COPY src ./src
 
 RUN chmod 777 mvnw
+RUN ./mvnw package
+
+RUN ls -l
 
 CMD [ "java","-jar","target/crud.war"]
